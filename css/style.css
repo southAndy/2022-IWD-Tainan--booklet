@@ -7,12 +7,45 @@
   width: 100%;
   height: 100%;
 }
+.heading_animation_speaker {
+  width: 130px;
+  height: 40px;
+  padding: 0;
+  perspective: 230px;
+  line-height: 40px;
+}
+.heading_animation_speaker:hover span:nth-child(1) {
+  transform: rotateX(90deg);
+}
+.heading_animation_speaker:hover span:nth-child(2) {
+  transform: rotateX(0deg);
+}
+.heading_animation_speaker span {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #7f8bef, #4780e7, #55baeb, #31dead);
+  transform: rotateX(45deg);
+  transition: all 0.3s;
+}
+.heading_animation_speaker span:nth-child(1) {
+  transform: rotateX(0deg);
+  transform-origin: 50% 50% -20px;
+}
+.heading_animation_speaker span:nth-child(2) {
+  transform: rotateX(-90deg);
+  transform-origin: 50% 50% -20px;
+}
 .heading_button {
   display: flex;
   flex-direction: column;
   position: relative;
   gap: 15px;
-  width: 100px;
+  width: 100%;
 }
 .heading_button_speaker {
   height: 30px;
@@ -32,26 +65,43 @@
   border: none;
   background: transparent;
 }
-.heading_button_animation {
-  animation: 3s ease-in-out infinite alternate show-button;
-}
-@keyframes show-button {
-  1% {
-    transform: translate(5px);
-  }
-  50% {
-    transform: translate(30px);
-  }
-  100% {
-    transform: translate(0px);
-  }
+.heading_button_timetable:hover {
+  background-image: url("../../img/vi9.svg");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: bottom -18px right 17px;
 }
 .heading_unit {
   display: flex;
   gap: 10px;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.heading_unit_gdg {
+  flex-basis: 100%;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+}
+.heading_unit_wtm {
+  flex-basis: 40%;
+  width: 100%;
+}
+.heading_unit_goodidea {
+  flex-basis: 40%;
+  width: auto;
 }
 .heading_unit li {
   list-style: none;
+}
+.heading_unit li a {
+  display: inline-block;
+  height: 25px;
+  width: auto;
+}
+.heading_unit li a img {
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -69,6 +119,12 @@ a {
 
 button {
   border: none;
+}
+
+body {
+  background-image: url(../../img/底色.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
