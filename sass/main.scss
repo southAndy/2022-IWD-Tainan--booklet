@@ -1,8 +1,11 @@
 @use "./layout/heading";
 @use "./layout/body";
+@use "./base/reset";
 
 body {
     background-image: url(../../img/底色.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
