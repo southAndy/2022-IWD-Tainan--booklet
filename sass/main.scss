@@ -1,2 +1,8 @@
 @use "./layout/heading";
 @use "./layout/body";
+
+body {
+    background-image: url(../../img/底色.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
