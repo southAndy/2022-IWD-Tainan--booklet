@@ -1,3 +1,241 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
 
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.schedule {
+  display: flex;
+  justify-content: center;
+}
+.schedule h3 {
+  padding: 10px 15px;
+}
+.schedule__column {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: start;
+}
+.schedule__column__period {
+  border-top: 1px solid;
+  padding: 10px 15px;
+}
+.schedule__column__period span {
+  font-size: 14px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.speaker {
+  display: flex;
+}
+.speaker__image {
+  flex: 0 0 auto;
+}
+.speaker__brief {
+  margin: 10px 10px 0;
+  align-self: center;
+  text-align: start;
+}
+.speaker__brief__name {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+.speaker__brief span {
+  display: block;
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #7f8bef, #4780e7, #55baeb, #31dead);
+  background-size: 150% 150%;
+  animation: gradient 3s ease infinite;
+  position: relative;
+}
+.frame::after {
+  content: "";
+  display: block;
+  height: 160px;
+  width: 2px;
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  z-index: -1;
+  transform: rotate(20deg);
+  background: #31dead;
+}
+.frame__decoration {
+  position: absolute;
+  width: 142.5px;
+  height: 142.5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame__photo {
+  display: block;
+  width: 75%;
+  height: 75%;
+  border-radius: 999px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
+section h2 {
+  margin-bottom: 35px;
+}
+section .section__decoration--top1 {
+  background: url("../../img/筆刷2.svg") no-repeat 0 -12px;
+  width: 191px;
+  height: 138px;
+  position: absolute;
+  z-index: 2;
+  top: -75px;
+  right: -35px;
+  transform: scale(1.3);
+}
+section .section__decoration--top2 {
+  background: url("../../img/筆刷4.svg") no-repeat -10px -17px;
+  width: 281px;
+  height: 71px;
+  position: absolute;
+  z-index: 1;
+  top: -25px;
+  right: -65px;
+}
+section .section__decoration--bottom1 {
+  background: url("../../img/筆刷1.svg") no-repeat 0 -6px;
+  width: 299px;
+  height: 128px;
+  position: absolute;
+  bottom: -50px;
+  left: -120px;
+  z-index: 2;
+  transform: rotate(5deg);
+}
+section .section__decoration--bottom2 {
+  background: url("../../img/筆刷3.svg") no-repeat 0 -11px;
+  width: 294px;
+  height: 32px;
+  position: absolute;
+  bottom: -25px;
+  left: 40px;
+  z-index: 1;
+  transform: scale(1.5);
+}
+section .section__wrapper {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.speakers {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.speaker {
+  margin-bottom: -10px;
+}
+.speaker:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+.speaker:nth-of-type(2n) .speaker__brief {
+  text-align: end;
+}
+
+.schedule {
+  margin-bottom: 30px;
+}
+
+.event {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.event__info {
+  display: flex;
+  align-items: center;
+}
+.event__info__label {
+  flex: 0 0 auto;
+  padding: 2px 20px 2px 5px;
+  margin-right: 15px;
+  background: #76B586;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+.event__info__label::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background: #76B586;
+  position: absolute;
+}
+.event__info--location {
+  flex: 0 0 auto;
+}
+.event__info--location .address {
+  text-align: start;
+}
+.event__info--location address {
+  font-style: normal;
+}
+
+.organizer img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+}
+.organizer img + img {
+  margin-left: 5px;
+}
+.organizer img.organizer__goodidea {
+  height: 40px;
+}
+
+body {
+  background-image: url(../../img/底色.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*# sourceMappingURL=style.css.map */

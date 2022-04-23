@@ -1,0 +1,78 @@
+@use "../base/colors";
+
+.speaker{
+  display: flex;
+
+  &__image{
+    flex: 0 0 auto;
+  }
+
+  &__brief{
+    margin: 10px 10px 0;
+    align-self: center;
+    text-align: start;
+
+    &__name{
+      margin-bottom: 5px;
+      font-size: 22px;
+    }
+
+    span{
+      display: block;
+    }
+  }
+}
+
+$photo-frame-width: 150px;
+
+.frame{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: $photo-frame-width;
+  height: $photo-frame-width;
+  border-radius: 999px;
+
+  background: colors.$gradient;
+  background-size: 150% 150%;
+	animation: gradient 3s ease infinite;
+
+  position: relative;
+
+  &::after{
+    content: "";
+    display: block;
+    height: 160px;
+    width: 2px;
+    // background-image: url("./img/人物3.svg");
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    z-index: -1;
+    transform: rotate(20deg);
+    background: colors.$green;
+  }
+
+  &__decoration{
+    position: absolute;
+    width: calc($photo-frame-width * 0.95);
+    height: calc($photo-frame-width * 0.95);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__photo{
+    display: block;
+    width: 75%;
+    height: 75%;
+    border-radius: 999px;
+  }
+}
+
+@keyframes gradient {
+	0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
