@@ -12,43 +12,54 @@
         }
     }
     &_animation{
-
+        display: flex;
+        justify-content: center;
         &_speaker {
             width: 130px;
             height: 40px;
             padding: 0;
             perspective: 230px;
             line-height: 40px;
+            background: transparent;
+
+
             &:hover {
+                background: colors.$gradient;
+                border-radius: 20px;
+                color:white;
                 span:nth-child(1){
-                    transform: rotateX(90deg);
+                    transform: rotateX(85deg);
 
                 }
                 span:nth-child(2){
-                    transform: rotateX(0deg);
+                    transform: rotateX(5deg);
 
                 }
             }
            span {
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;          
             content: "";
-            position: absolute;
             display: block;
+            background: colors.$gradient;
+            border-radius:20px;
+            position: absolute;
             top: 0;
             bottom: 0;
             right: 0;
             left: 0;
-            background: colors.$gradient;
+            // background: colors.$gradient;
             transform: rotateX(45deg);
             transition: all .3s;
 
             &:nth-child(1){
-                transform: rotateX(0deg);
+                transform: rotateX(5deg);
                 
                 //旋轉的依據軸線
                 transform-origin: 50% 50% -20px;
             }
             &:nth-child(2){
-                transform: rotateX(-90deg);
+                transform: rotateX(-85deg);
                 transform-origin: 50% 50% -20px;
             }
            } 

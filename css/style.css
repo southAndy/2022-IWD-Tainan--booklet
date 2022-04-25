@@ -7,37 +7,50 @@
   width: 100%;
   height: 100%;
 }
+.heading_animation {
+  display: flex;
+  justify-content: center;
+}
 .heading_animation_speaker {
   width: 130px;
   height: 40px;
   padding: 0;
   perspective: 230px;
   line-height: 40px;
+  background: transparent;
+}
+.heading_animation_speaker:hover {
+  background: linear-gradient(90deg, #7f8bef, #4780e7, #55baeb, #31dead);
+  border-radius: 20px;
+  color: white;
 }
 .heading_animation_speaker:hover span:nth-child(1) {
-  transform: rotateX(90deg);
+  transform: rotateX(85deg);
 }
 .heading_animation_speaker:hover span:nth-child(2) {
-  transform: rotateX(0deg);
+  transform: rotateX(5deg);
 }
 .heading_animation_speaker span {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
   content: "";
-  position: absolute;
   display: block;
+  background: linear-gradient(90deg, #7f8bef, #4780e7, #55baeb, #31dead);
+  border-radius: 20px;
+  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(90deg, #7f8bef, #4780e7, #55baeb, #31dead);
   transform: rotateX(45deg);
   transition: all 0.3s;
 }
 .heading_animation_speaker span:nth-child(1) {
-  transform: rotateX(0deg);
+  transform: rotateX(5deg);
   transform-origin: 50% 50% -20px;
 }
 .heading_animation_speaker span:nth-child(2) {
-  transform: rotateX(-90deg);
+  transform: rotateX(-85deg);
   transform-origin: 50% 50% -20px;
 }
 .heading_button {
