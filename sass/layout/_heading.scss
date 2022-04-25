@@ -1,0 +1,194 @@
+@use "../base/colors";
+
+.heading {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100vh;
+    padding: 85px 0 70px;
+
+    .section__decoration{
+        &--top1 {
+        background: url('../../img/筆刷2.svg') no-repeat 0 -12px;
+        width: 191px;
+        height: 138px;
+  
+        position: absolute;
+        z-index: 2;
+        top: -75px;
+        right: -35px;
+        transform: scale(1.3);
+      }
+  
+      &--top2{
+        background: url('../../img/筆刷4.svg') no-repeat -10px -17px;
+        width: 281px;
+        height: 71px;
+  
+        position: absolute;
+        z-index: 1;
+        top: -25px;
+        right: -65px;
+      }
+    }
+    &_gif_container{
+        margin: 0 auto;
+        width: 85%;
+        font-size: 0;
+        img {
+            width:100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &_animation{
+        display: flex;
+        justify-content: center;
+        a{
+            display: flex;
+            width:30%;
+        }
+        &_speaker {
+            flex:1 0 0;
+            gap:10px;
+            // width: 130px;
+            height: 200px;
+            padding: 0;
+            line-height: 40px;
+            // perspective: 230px;
+            transform-style: preserve-3d;
+            background: transparent;
+            color:white;
+            transform: rotate3d(0,0,0,0deg);
+            transition: 1s;
+            &:hover {
+                background: colors.$gradient;
+                border-radius: 20px;
+                transform: rotate3d(1,0,0,90deg);
+                // span:nth-child(1){
+                //     -webkit-transform: rotateX(85deg);
+                //     -moz-transform: rotateX(85deg);
+                //      -ms-transform: rotateX(85deg);
+                //       -o-transform: rotateX(85deg);
+                //          transform: rotateX(85deg);
+
+
+                // }
+                // span:nth-child(2){
+                //     -webkit-transform: rotateX(5deg);
+                //     -moz-transform: rotateX(5deg);
+                //      -ms-transform: rotateX(5deg);
+                //       -o-transform: rotateX(5deg);
+                //          transform: rotateX(5deg);
+
+                // }
+            }
+           span {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;          
+            content: "";
+            display: block;
+            background: colors.$gradient;
+            border-radius:20px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            // background: colors.$gradient;
+            // transform: rotateX(45deg);
+            transition: all .3s;
+            animation: gradient 3s ease infinite;
+            background-size: 150% 150%;
+
+            &:nth-child(1){
+                transform: rotateX(0deg) translateZ(20px);}
+                
+            //     //旋轉的依據軸線
+            //     transform-origin: 50% 50% -20px;
+            // }
+            &:nth-child(2){
+                transform: rotateX(-90deg) translateZ(20px);
+                // transform-origin: 50% 50% -20px;
+                // left:0px;
+            }
+           } 
+        }
+    }
+
+    &_button{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 15px;
+        width: 100%;
+        &_speaker{
+            height:30px;
+            border-radius: 30px;
+            border:none;
+            background: transparent;
+            &:hover{
+                background-image: url("../../img/vi9.svg"); 
+                background-repeat: no-repeat;
+                background-size: 130%;
+                background-position: bottom -18px right 17px;
+
+            }
+
+        }
+
+        &_timetable{
+            height:30px;
+            border-radius: 30px;
+            border:none;
+            background: transparent;
+            &:hover{
+                background-image: url("../../img/vi9.svg"); 
+                background-repeat: no-repeat;
+                background-size: 130%;
+                background-position: bottom -18px right 17px;
+
+            }
+        }
+       
+    }
+
+    &_unit {
+        display: flex;
+        gap:10px;
+        justify-content: end;
+        flex-wrap: wrap;
+
+        &_gdg{
+            flex-basis: 100%;
+            width:100%;
+            //讓文字center
+            text-align: center;
+            margin-right: 20px;
+        }
+        &_wtm{
+            flex-basis: 40%;
+            width:100%;
+            
+        }
+        &_goodidea{
+            flex-basis: 40%;
+            width:auto;
+        }
+        li{
+            list-style: none;
+            
+            a{
+                display: inline-block;
+                height:25px;
+                width:auto;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+        }
+    }
+}

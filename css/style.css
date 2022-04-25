@@ -16,11 +16,159 @@ button {
   border: none;
 }
 
+.heading {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+  padding: 85px 0 70px;
+}
+.heading .section__decoration--top1 {
+  background: url("../../img/筆刷2.svg") no-repeat 0 -12px;
+  width: 191px;
+  height: 138px;
+  position: absolute;
+  z-index: 2;
+  top: -75px;
+  right: -35px;
+  transform: scale(1.3);
+}
+.heading .section__decoration--top2 {
+  background: url("../../img/筆刷4.svg") no-repeat -10px -17px;
+  width: 281px;
+  height: 71px;
+  position: absolute;
+  z-index: 1;
+  top: -25px;
+  right: -65px;
+}
+.heading_gif_container {
+  margin: 0 auto;
+  width: 85%;
+  font-size: 0;
+}
+.heading_gif_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.heading_animation {
+  display: flex;
+  justify-content: center;
+}
+.heading_animation a {
+  display: flex;
+  width: 30%;
+}
+.heading_animation_speaker {
+  flex: 1 0 0;
+  gap: 10px;
+  height: 200px;
+  padding: 0;
+  line-height: 40px;
+  transform-style: preserve-3d;
+  background: transparent;
+  color: white;
+  transform: rotate3d(0, 0, 0, 0deg);
+  transition: 1s;
+}
+.heading_animation_speaker:hover {
+  background: linear-gradient(90deg, #7f8bef, #4780e7, #55baeb, #31dead);
+  border-radius: 20px;
+  transform: rotate3d(1, 0, 0, 90deg);
+}
+.heading_animation_speaker span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  content: "";
+  display: block;
+  background: linear-gradient(90deg, #7f8bef, #4780e7, #55baeb, #31dead);
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all 0.3s;
+  animation: gradient 3s ease infinite;
+  background-size: 150% 150%;
+}
+.heading_animation_speaker span:nth-child(1) {
+  transform: rotateX(0deg) translateZ(20px);
+}
+.heading_animation_speaker span:nth-child(2) {
+  transform: rotateX(-90deg) translateZ(20px);
+}
+.heading_button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+  width: 100%;
+}
+.heading_button_speaker {
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background: transparent;
+}
+.heading_button_speaker:hover {
+  background-image: url("../../img/vi9.svg");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: bottom -18px right 17px;
+}
+.heading_button_timetable {
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background: transparent;
+}
+.heading_button_timetable:hover {
+  background-image: url("../../img/vi9.svg");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: bottom -18px right 17px;
+}
+.heading_unit {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.heading_unit_gdg {
+  flex-basis: 100%;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+}
+.heading_unit_wtm {
+  flex-basis: 40%;
+  width: 100%;
+}
+.heading_unit_goodidea {
+  flex-basis: 40%;
+  width: auto;
+}
+.heading_unit li {
+  list-style: none;
+}
+.heading_unit li a {
+  display: inline-block;
+  height: 25px;
+  width: auto;
+}
+.heading_unit li a img {
+  width: 100%;
+  height: 100%;
+}
+
 .schedule {
   display: flex;
   justify-content: center;
 }
 .schedule h3 {
+  font-weight: 400;
   padding: 10px 15px;
 }
 .schedule__column {
@@ -112,7 +260,9 @@ section {
   overflow: hidden;
 }
 section h2 {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-weight: 400;
 }
 section .section__decoration--top1 {
   background: url("../../img/筆刷2.svg") no-repeat 0 -12px;
@@ -156,7 +306,7 @@ section .section__decoration--bottom2 {
 section .section__wrapper {
   width: 100%;
   max-width: 500px;
-  padding: 40px 0;
+  padding: 50px 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -230,6 +380,14 @@ section .section__wrapper {
 }
 .organizer img.organizer__goodidea {
   height: 40px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 body {
