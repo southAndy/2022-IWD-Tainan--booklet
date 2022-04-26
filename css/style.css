@@ -17,6 +17,8 @@ button {
 }
 
 .heading {
+  max-width: 500px;
+  margin: 0 auto;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
@@ -394,6 +396,11 @@ body {
   background-image: url(../../img/底色.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
