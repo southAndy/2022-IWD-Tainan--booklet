@@ -26,7 +26,7 @@ button {
   padding: 85px 0 70px;
 }
 .heading .section__decoration--top1 {
-  background: url("../../img/筆刷2.svg") no-repeat 0 -12px;
+  background: url("../img/筆刷2.svg") no-repeat 0 -12px;
   width: 191px;
   height: 138px;
   position: absolute;
@@ -36,7 +36,7 @@ button {
   transform: scale(1.3);
 }
 .heading .section__decoration--top2 {
-  background: url("../../img/筆刷4.svg") no-repeat -10px -17px;
+  background: url("../img/筆刷4.svg") no-repeat -10px -17px;
   width: 281px;
   height: 71px;
   position: absolute;
@@ -267,7 +267,7 @@ section h2 {
   font-weight: 400;
 }
 section .section__decoration--top1 {
-  background: url("../../img/筆刷2.svg") no-repeat 0 -12px;
+  background: url("../img/筆刷2.svg") no-repeat 0 -12px;
   width: 191px;
   height: 138px;
   position: absolute;
@@ -277,7 +277,7 @@ section .section__decoration--top1 {
   transform: scale(1.3);
 }
 section .section__decoration--top2 {
-  background: url("../../img/筆刷4.svg") no-repeat -10px -17px;
+  background: url("../img/筆刷4.svg") no-repeat -10px -17px;
   width: 281px;
   height: 71px;
   position: absolute;
@@ -286,7 +286,7 @@ section .section__decoration--top2 {
   right: -65px;
 }
 section .section__decoration--bottom1 {
-  background: url("../../img/筆刷1.svg") no-repeat 0 -6px;
+  background: url("../img/筆刷1.svg") no-repeat 0 -6px;
   width: 299px;
   height: 128px;
   position: absolute;
@@ -296,7 +296,7 @@ section .section__decoration--bottom1 {
   transform: rotate(5deg);
 }
 section .section__decoration--bottom2 {
-  background: url("../../img/筆刷3.svg") no-repeat 0 -11px;
+  background: url("../img/筆刷3.svg") no-repeat 0 -11px;
   width: 294px;
   height: 32px;
   position: absolute;
@@ -393,7 +393,7 @@ footer {
 }
 
 body {
-  background-image: url(../../img/底色.svg);
+  background-image: url(../img/底色.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
