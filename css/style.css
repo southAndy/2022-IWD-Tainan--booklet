@@ -65,7 +65,7 @@ button {
 .heading_animation_speaker {
   flex: 1 0 0;
   gap: 10px;
-  height: 200px;
+  height: 40px;
   padding: 0;
   line-height: 40px;
   transform-style: preserve-3d;
@@ -80,7 +80,7 @@ button {
   transform: rotate3d(1, 0, 0, 90deg);
 }
 .heading_animation_speaker span {
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
   content: "";
   display: block;
