@@ -2,7 +2,57 @@ footer {
     display: flex;
     flex-wrap: wrap;
     // height:100vh;
-    margin-top: 20px;
+    // margin-top: 20px;
     justify-content: center;
-    padding: 20px;
+    padding: 0 10px 40px;
+
+
+    position: relative;
+    overflow: hidden;
+
+    .section__decoration{
+        &--bottom1{
+        background: url('../img/筆刷1.svg') no-repeat 0 -6px;
+        width: 299px;
+        height: 128px;
+
+        position: absolute;
+        bottom: -50px;
+        left: -120px;
+        z-index: 2;
+
+        transform: rotate(5deg);
+        }
+
+        &--bottom2{
+        background: url('../img/筆刷3.svg') no-repeat 0 -11px;
+        width: 294px;
+        height: 32px;
+
+        position: absolute;
+        bottom: -25px;
+        left: 40px;
+        z-index: 1;
+
+        transform: scale(1.5);
+        }
+    }
+
+    .organizer{
+        text-align: center;
+
+        img{
+            display: inline-block;
+            vertical-align: middle;
+            height:30px;
+
+            & + img{
+            margin-left: 5px;
+            }
+
+            &.organizer__goodidea{
+            height: 40px;
+            }
+        }
+    }
 }

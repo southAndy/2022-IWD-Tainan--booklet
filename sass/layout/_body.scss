@@ -90,7 +90,7 @@ section {
 }
 
 .schedule{
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .event{
@@ -161,18 +161,3 @@ section {
   }
 }
 
-.organizer{
-  img{
-    display: inline-block;
-    vertical-align: middle;
-    height:30px;
-
-    & + img{
-      margin-left: 5px;
-    }
-
-    &.organizer__goodidea{
-      height: 40px;
-    }
-  }
-}
