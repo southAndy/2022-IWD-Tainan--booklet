@@ -174,10 +174,21 @@ button {
   font-weight: 400;
   padding: 10px 15px;
 }
+@media (max-width: 350px) {
+  .schedule h3 {
+    padding: 10px 10px;
+  }
+}
 .schedule__column {
   font-size: 18px;
   line-height: 1.5;
   text-align: start;
+}
+@media (max-width: 350px) {
+  .schedule__column {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
 }
 .schedule__column--time {
   font-family: "Open Sans", sans-serif;
@@ -186,10 +197,21 @@ button {
   border-top: 1px solid;
   padding: 10px 15px;
 }
+@media (max-width: 350px) {
+  .schedule__column__period {
+    padding: 10px 10px;
+  }
+}
 .schedule__column__period span {
   font-size: 14px;
   margin-left: 5px;
   vertical-align: middle;
+}
+@media (max-width: 350px) {
+  .schedule__column__period span {
+    font-size: 0.9rem;
+    margin-left: 3px;
+  }
 }
 
 .speaker {
