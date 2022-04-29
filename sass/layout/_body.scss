@@ -2,6 +2,10 @@
 @use "../component/schedule";
 @use "../component/speaker";
 
+main{
+  position: relative;
+}
+
 section {
     h2{
       margin-bottom: 20px;

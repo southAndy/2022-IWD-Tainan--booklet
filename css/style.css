@@ -10,6 +10,7 @@ h1, h2, h3, h4, p {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 button {
@@ -257,6 +258,10 @@ button {
     background-position: 0% 50%;
   }
 }
+main {
+  position: relative;
+}
+
 section {
   position: relative;
   overflow: hidden;
@@ -420,6 +425,23 @@ body {
 .container {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.jump_arrow {
+  width: 30px;
+  height: 30px;
+  position: sticky;
+  top: 30px;
+  right: 0px;
+  z-index: 20;
+}
+.jump_arrow i {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.invisible {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
