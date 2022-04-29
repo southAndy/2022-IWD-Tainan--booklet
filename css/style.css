@@ -168,7 +168,7 @@ button {
 
 .schedule_img {
   width: 100%;
-  margin: -20px 0;
+  margin: -20px 0 -50px;
 }
 .schedule_img img {
   width: 100%;
@@ -314,10 +314,10 @@ section .section__wrapper {
 .speaker {
   margin-bottom: -10px;
 }
-.speaker:nth-of-type(2n) {
+.speaker:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
-.speaker:nth-of-type(2n) .speaker__brief {
+.speaker:nth-of-type(odd) .speaker__brief {
   text-align: end;
 }
 
