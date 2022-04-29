@@ -179,6 +179,9 @@ button {
   line-height: 1.5;
   text-align: start;
 }
+.schedule__column--time {
+  font-family: "Open Sans", sans-serif;
+}
 .schedule__column__period {
   border-top: 1px solid;
   padding: 10px 15px;
@@ -260,6 +263,7 @@ button {
 }
 main {
   position: relative;
+  text-align: rightxj;
 }
 
 section {
@@ -431,8 +435,8 @@ body {
   width: 30px;
   height: 30px;
   position: sticky;
-  top: 30px;
-  right: 0px;
+  top: 20%;
+  right: 10%;
   z-index: 20;
 }
 .jump_arrow i {

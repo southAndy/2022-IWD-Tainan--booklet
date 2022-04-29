@@ -14,6 +14,12 @@ $schedule-div-horizontal-padding: 15px;
     line-height: 1.5;
     text-align: start;
 
+    &--time{
+
+      font-family: 'Open Sans', sans-serif;
+    }
+
+
     &__period{
       border-top: 1px solid;
       padding: 10px $schedule-div-horizontal-padding;
